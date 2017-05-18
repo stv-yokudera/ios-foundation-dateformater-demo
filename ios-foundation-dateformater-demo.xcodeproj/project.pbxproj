@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6DE6B711EC6DD3A005B37AF /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE6B701EC6DD3A005B37AF /* DateFormatterHelper.swift */; };
 		BC34C0AD1E932F0100EA1F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34C0AC1E932F0100EA1F91 /* AppDelegate.swift */; };
 		BC34C0AF1E932F0100EA1F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34C0AE1E932F0100EA1F91 /* ViewController.swift */; };
 		BC34C0B21E932F0100EA1F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC34C0B01E932F0100EA1F91 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6DE6B701EC6DD3A005B37AF /* DateFormatterHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		BC34C0A91E932F0100EA1F91 /* ios-foundation-dateformater-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-foundation-dateformater-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC34C0AC1E932F0100EA1F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC34C0AE1E932F0100EA1F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		BC34C0AB1E932F0100EA1F91 /* ios-foundation-dateformater-demo */ = {
 			isa = PBXGroup;
 			children = (
+				B6DE6B701EC6DD3A005B37AF /* DateFormatterHelper.swift */,
 				BC34C0AC1E932F0100EA1F91 /* AppDelegate.swift */,
 				BC34C0AE1E932F0100EA1F91 /* ViewController.swift */,
 				BC34C0B01E932F0100EA1F91 /* Main.storyboard */,
@@ -146,6 +149,7 @@
 				TargetAttributes = {
 					BC34C0A81E932F0100EA1F91 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = PCCZJUYRT6;
 						ProvisioningStyle = Automatic;
 					};
 					BC34C0BC1E932F0100EA1F91 = {
@@ -199,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6DE6B711EC6DD3A005B37AF /* DateFormatterHelper.swift in Sources */,
 				BC34C0AF1E932F0100EA1F91 /* ViewController.swift in Sources */,
 				BC34C0AD1E932F0100EA1F91 /* AppDelegate.swift in Sources */,
 			);
@@ -339,7 +344,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-foundation-dateformater-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-foundation-dateformater-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-foundation-dateformater-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-foundation-dateformater-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +415,7 @@
 				BC34C0C81E932F0100EA1F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC34C0C91E932F0100EA1F91 /* Build configuration list for PBXNativeTarget "ios-foundation-dateformater-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +424,7 @@
 				BC34C0CB1E932F0100EA1F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

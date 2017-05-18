@@ -14,11 +14,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
-        testStr2Date()
-        testDate2Str()
-        testDate2StrForDateStyle()
-        testDate2StrForTimeStyle()
+        
+        // DateFormatterHelperを初期化
+        let dfHelper = DateFormatterHelper()
+        
+        // Date(現在時刻)をStringに変換
+        let now = Date()
+        print("stringFromDate: \(dfHelper.dateFormatter.string(from: now))")
+        
+        // Localeを設定
+        dfHelper.setLocale(locale: "ja_JP")
+        
+        // DateFormatを設定
+        dfHelper.setDateFormat(format: "yyyy-MM-dd 'at' HH:mm")
+        
+        // StringをDateに変換
+        let dateStr = "2017-05-19 at 22:30"
+        if let date = dfHelper.dateFormatter.date(from: dateStr) {
+            print("dateFromString: \(date)")
+        }
+        
+        // 「今日」「昨日」などで表すFormat
+        let yesterday = Date(timeIntervalSinceNow: -60*60*24)
+        let relativeDateFormatStr = dfHelper.doesRelativeDateFormatting().string(from: yesterday)
+        print("relativeDateFormatStr: \(relativeDateFormatStr)")
     }
     
     func setup() {
